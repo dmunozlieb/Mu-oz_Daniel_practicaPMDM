@@ -14,5 +14,10 @@
     <string name="previous">Previous</string>
     <string name="txt_diaactual">Día %s</string>
     <string name="happy_christmas">Happy Christmas, %s</string>
-
+    <string name="roscon_chritmas">Roscon de reyes</string>
+    <string name="tronco_christmas">Tronco de navidad</string>
+    <string name="panettone_christmas">Panettone</string>
+    <string name="galleta_jengibre">Galleta de Jengibre</string>
+    <string name="stollen">stollen</string>
+    <string name="polvoron_almendras">Polvoron de almendras</string>
 </resources>

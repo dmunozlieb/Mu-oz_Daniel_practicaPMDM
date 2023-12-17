@@ -19,6 +19,11 @@ class MainActivity : AppCompatActivity() {
         binding.cardCalendar.setOnClickListener{
             ejecutarActivityCalendar()
         }
+
+        binding.cardDulces.setOnClickListener{
+            ejecutarAtivityReceta()
+        }
+
     }
     fun cargarGif(){
         Glide.with(this)
@@ -28,16 +33,21 @@ class MainActivity : AppCompatActivity() {
 
     fun ejecutarActivityCalendar(){
         if (validarettext()){
-            val intent_activityinical = Intent(this, ActivityCalendar::class.java)
+            val intent = Intent(this, ActivityCalendar::class.java)
             val user_name = binding.etNombre.text.toString()
-            intent_activityinical.putExtra("name", user_name)
-            startActivity(intent_activityinical)
+            intent.putExtra("name", user_name)
+            startActivity(intent)
         }else{
             Toast.makeText(applicationContext,
                 "Por favor introduzca un nombre primero!",
                 Toast.LENGTH_SHORT).show()
 
         }
+    }
+
+    fun ejecutarAtivityReceta(){
+        val intent = Intent(this, ActivityReceta::class.java)
+        startActivity(intent)
     }
     private fun validarettext(): Boolean{
         return binding.etNombre.text.toString() != null &&

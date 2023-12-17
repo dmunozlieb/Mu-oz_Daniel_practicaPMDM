@@ -117,6 +117,7 @@
             >
 
             <androidx.cardview.widget.CardView
+
                 android:layout_width="100dp"
                 android:layout_height="150dp"
                 app:cardCornerRadius="15dp"
@@ -156,6 +157,7 @@
             app:cardCornerRadius="15dp"
             >
             <androidx.cardview.widget.CardView
+                android:id="@+id/card_dulces"
                 android:layout_width="100dp"
                 android:layout_height="150dp"
                 app:cardCornerRadius="15dp"
